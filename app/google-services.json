@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "983881426803",
+    "project_id": "bridgeledger",
+    "storage_bucket": "bridgeledger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983881426803:android:3d172db259f5b8cf948706",
+        "android_client_info": {
+          "package_name": "com.cinntra.ledger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcc9mqoYhhmYm32RqvTqzfgztSyoNqmAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

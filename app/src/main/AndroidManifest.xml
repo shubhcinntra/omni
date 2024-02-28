@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cinntra.ledger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <application
+        android:name="com.cinntra.ledger.globals.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ledger_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ledger_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CinntraSales"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity
+            android:name="com.cinntra.ledger.activities.CalenderActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.cinntra.ledger.activities.ParticularCustomerPaymentDueInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialFullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.CreditOneActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.CreditNoteParticularActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ParticularBpCreditNoteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+
+        <activity
+            android:name="com.cinntra.ledger.activities.SubGroupStockActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+           />
+
+
+        <activity
+            android:name="com.cinntra.ledger.activities.SoldItemSubGroupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.cinntra.ledger.activities.Sold_ItemBasesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name="com.cinntra.ledger.activities.CategoryListFromZoneItemsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name="com.cinntra.ledger.activities.CreditNoteDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.Sale_Group_Inovice_Reports"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialFullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.GoToMapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.TripAndExpenseDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ShowCheckInImageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.test.TestActivityForDeveloper"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ItemPurchasedParticularCustomerInfo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ItemPurchasedByListOfCustomersActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ItemDetailsDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ItemDashboardListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ExpenseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ActivityOrderOneDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.PendingByOrderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.PendingOrderSubListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.SoldItemDetailsList"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.MainActivity_B2C"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.Splash"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cinntra.ledger.activities.SearchActivity" />
+        <activity
+            android:name="com.cinntra.ledger.activities.InvoiceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/invoice"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/FullScreen" -->
+        <activity
+            android:name="com.cinntra.ledger.activities.QuotationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/quotations"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ExoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/quotations"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/quotations"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.MyMapLocation"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.WebViewToPdf"
+            android:exported="false" />
+
+        <!-- android:theme="@style/FullScreen" -->
+        <activity
+            android:name="com.cinntra.ledger.activities.OpportunitiesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_invoice"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/FullScreen" -->
+        <activity
+            android:name="com.cinntra.ledger.activities.OrderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sales_order"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/FullScreen" -->
+        <activity
+            android:name="com.cinntra.ledger.activities.SignUp"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="New User"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.Sale_Inovice_Reports"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialFullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.Reports"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialFullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- android:theme="@style/MaterialFullScreen" -->
+        <activity
+            android:name="com.cinntra.ledger.activities.ReceiptTransactionFullInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.InvoiceTransactionFullInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.PendingOrders"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ParticularCustomerInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialFullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ParticularCustomerReceivableInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialFullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ParticularCustomerReceiptInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialFullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ParticularCustomerSaleInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialFullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.SqlSetting"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.Notifications"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.DeliveryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.InvoiceItemList"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.InventoryActivity"
+            android:label="@string/inventory"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" /> <!--  -->
+        <activity
+            android:name="com.cinntra.ledger.globals.MainBaseActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.LedgerReports"
+            android:label="@string/ledger"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.LeadsActivity"
+            android:label="@string/leads"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.CampaignActivity"
+            android:label="@string/campaign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.CreateContact"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.AddQuotationAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.AddOrderAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.AddBPCustomer"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.AddOpportunityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.AddLead"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.AddCampaign"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.BussinessPartners"
+            android:label="@string/customer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.ledger.activities.ItemsList"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.OwnerList"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.SelectedItems"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.CustomersWiseLedger"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.LedgerCutomerDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen">
+
+            <!--
+              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.cinntra.ledger.activities.CustomerDetailsLeger"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/customers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.CashDiscount"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.InvoicesListReceiptBasis"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.ledger.activities.AddContact"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" /> <!-- Receivers -->
+        <receiver
+            android:name="com.cinntra.ledger.receivers.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.cinntra.ledger.activities.MapsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.LocationListing"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.ledger.activities.Opportunities_Pipeline_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_invoice"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.cinntra.ledger.receivers.NotificationPublisher" />
+        <!--
+ <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.cinntra.ledger.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <service android:name="com.cinntra.ledger.services.GoogleService" />
+        <service
+            android:name="com.cinntra.ledger.FirebaseMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
